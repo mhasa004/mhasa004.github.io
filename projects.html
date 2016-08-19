@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Mahmudul Hasan</title>
+
+<meta name="viewport" content="width=device-width"/>
+<meta name="description" content="Mahmudul Hasan"/>
+<meta charset="UTF-8"> 
+
+<link type="text/css" rel="stylesheet" href="./css/style.css">
+<link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700|Lato:400,300' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="./js/jquery-latest.js"></script>
+<script type="text/javascript" src="./js/readmore.js"></script>
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<style>
+.comment {
+	width: 100%;
+	float: right;
+	background-color: #f0f0f0;
+	margin: 0px;
+	font-style: italic;
+}
+a.morelink {
+	text-decoration:none;
+	outline: none;
+}
+.morecontent span {
+	display: none;
+}
+
+#mainArea h2{
+	font-variant: small-caps;
+    font-family: Arial;
+    font-weight: bold;
+    color: #bb3333;
+	padding-bottom: 5px;
+}
+
+</style>
+
+</head>
+<body id="top">
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+<div id="cv" class="instaFade">
+	<div id="mainDetails">
+		<iframe src="header.html" scrolling=no width=100% height=130px></iframe>
+		<div class="clear"></div>
+	</div>
+	
+	<div id="headLinks">
+		<a href="index.html">Home</a>
+		<a href="index.html#education">Education</a>
+		<a href="index.html#works">Experience</a>
+		<a href="index.html#research">Research</a>
+		<a href="publications.html">Publications</a>
+		<a href="index.html#random">Random</a>
+		<a href="./cv/cv_hasan.pdf">CV</a>
+		
+		<div class="clear"></div>
+	</div>
+
+	<div id="mainArea" class="quickFade delayFive">
+		<section>
+			<div class="sectionTitle">
+				<h1>Ongoing Projects</h1>
+			</div>
+			
+			<div class="sectionContent">
+				<article>
+				<a name="incr"></a>
+					<h2> Incremental Activity Modeling.</h2>
+					<div class="comment more">
+						Human activity recognition in videos is a difficult but widely studied problem in computer vision due to its numerous practical applications. Most of the state-of-the-art approaches to human activity recognition need an intensive training stage and assume that all of the training examples are labeled and available beforehand. But these assumptions are unrealistic for many applications where we have to deal with streaming videos. In these continuous streaming videos, as new activities are seen, they can be leveraged upon to improve the current activity recognition model. In this work, we aim to develop an incremental activity learning framework that will be able to continuously update the activity models and learn new ones as more videos are seen. Our proposed approach leverages upon state-of-the-art machine learning tools, most notably active learning systems, and leads to the development of an online activity recognition framework for streaming videos. It does not require tedious manual labeling of every incoming examples of each activity class. We perform rigorous experiments on challenging human activity datasets, which demonstrate the robustness of our incremental activity modeling framework
+					</div>
+				</article>
+				<div class="clear"></div>
+				<div style="width:55%; height: 200px; float:left; text-align:center; padding:30px 10px;" >
+					<figure>
+						 <img src="./images/projects/motiv2.png" width="100%" height="200px"/>
+						<figcaption>Problem statement and motivation.</figcaption>
+					</figure>
+				</div>
+				<div style="width:35%; height: 200px; float:left; text-align:center; padding:30px 10px;" >
+					<figure>
+						 <img src="./images/projects/killEx.png" width="100%" height="200px"/>
+						<figcaption>Incremental learning.</figcaption>
+					</figure>
+				</div>
+				<div class="clear"></div>
+			</div>	
+						
+			<div class="clear"></div>
+		</section>
+		
+		<section>
+			<div class="sectionTitle">
+				<h1>Future Projects</h1>
+			</div>
+			<div class="sectionContent">
+				<article>
+					<h2> Utilizing Context in Activity Recognition.</h2>
+					<div class="comment more">
+						 Context is significant in human visual systems. As there is no formal definition of context in computer vision, we consider all the detected objects and motion regions as providing contextual information about each other. Activities in natural scenes rarely happen independently. The spatial layout of activities and their sequential patterns provide useful cues for their understanding.
+					</div>
+				</article>
+			</div>
+			<div class="clear"></div>
+		</section>
+		
+		<section>
+			<div class="sectionTitle">
+				<h1></h1>
+			</div>
+			<div class="sectionContent">
+				<article>
+					<h2> Utilizing Sparse Coding and Deep Learning in Activity Recognition.</h2>
+					<div class="comment more">
+						Sparse modeling is also called feature selection in pattern recognition. It aims to find the set of features which can be used to solve targeted problem optimally from a larger set of candidate features. In many applications of pattern recognition, extracted features are often redundant or highly correlated. There are advantages for feature selection: since the model features are sparse, it would be more efficient and effective to estimate the parameters. The direct way of feature selection is to find a sparse subset of features that optimizes an objective function which evaluates the quality of using this subset of features in the model building.
+					</div>
+				</article>
+			</div>
+			<div class="clear"></div>
+		</section>
+		
+		<section>
+			<div class="sectionTitle">
+				<h1>Completed Projects</h1>
+			</div>
+			<div class="sectionContent">
+				<article>
+				<a name="aerial"></a>
+					<h2> Aerial Video Tracking.</h2>
+					<div class="comment more">
+						The analysis of videos from aerial platforms remains a challenging and important problem. The most fundamental task in this regard is to be able to detect and track objects reliably from a moving platform. In this paper, we address the problem of multi-target detection and tracking in unconstrained aerial videos. Generally, aerial videos are very unstable due to air turbulence and targets of interest have few discriminating features, which impose strong challenges in tracking objects such as humans and vehicles. In our proposed approach, we stabilize an unstable aerial video using homography transformation. We estimate the homography between two frames of an unstable video by utilizing the geometric constraint of the ground plane. In order to detect targets in a stabilized video frame, we detect motion regions and then identify targets of interest around the motion regions using appearance based pre-trained classifiers. We devise a finite state machine (FSM) that incorporates both motion detection and target classification into a Kalman filter (KF) based tracking-by-detection framework for robustly tracking humans and vehicles across the aerial video frames. Finally, we associate the tracklets by using overlap and appearance based bipartite graph matching and homography projection of the tracklets. We conduct extensive experiments on challenging aerial video datasets, which prove the robustness of our approach compared to other state-of-the-art tracking approaches.
+					</div>
+				</article>
+				
+				<div class="clear"></div>
+				<div style="width:40%; height: 200px; float:left; text-align:center; padding:30px 10px;" >
+					<figure>
+						 <img src="./images/projects/aerial_framework.png" width="100%" height="200px"/>
+						<figcaption>Solution framework.</figcaption>
+					</figure>
+				</div>
+				<div style="width:45%; height: 200px; float:left; text-align:center; padding:30px 10px;" >
+					<video id="my_video_1" class="video-js vjs-default-skin" controls
+							  preload="auto" width="100%" height="200px"
+							  data-setup="{}">
+							  <source src="./images/projects/Aerial Tracking_1min.mp4" type='video/mp4'>
+							</video>
+					Sample tracking video.
+				</div>
+				<div class="clear"></div>
+				
+			</div>
+			<div class="clear"></div>
+		</section>
+		
+		<section>
+			<div class="sectionTitle">
+				<h1></h1>
+			</div>
+			<div class="sectionContent">
+				<article>
+				<a name="trecvid"></a>
+					<h2> Human Activity Recognition in Surveillence Videos.</h2>
+					<div class="comment more">
+					We detect seven activities defined by TRECVID SED task such as CellToEar, Embrace, ObjectPut, PeopleMeet, PeopleSplitUp, PersonRuns, and Pointing. We employ two different strategies to detect these activities based on their characteristics.  Activities like CellToEar, Embrace, ObjectPut, and Pointing are the results of articulated motion of human parts. Therefore, we employ local spatio-temporal interest point (STIP) feature based bag of words strategy for these activities. Visual vocabularies are constructed from the STIP features and each activity is described by the histograms of visual words. We also construct activity probability map for each camera-activity pair that reflects the spatial distribution of an activity in a camera. We train a discriminative SVM classifier using Gaussian kernel for each camera-activity pair. During evaluation we employ sliding window based technique. We slide spatio-temporal cuboids in both spatial and temporal direction to find a likely activity. The cuboid is also described by the histograms of visual words and final decision is made using the SVM classifier and the activity probability map. For the activities like PeopleMeet, PeopleSplitUp, and PersonRuns, the characteristics of trajectories of persons of interest in the activities are discriminative. For instance, trajectories of PeopleMeet converge along time while those of PeopleSplitUp diverge along time. Therefore, we use track-based string of feature graph (SFG) to recognize these activities. Results of our experimental runs on the evaluation videos are comparable with other participants. Our performances in all the activities are among the top five teams.
+					</div>
+				</article>
+				
+				<div class="clear"></div>
+				<div style="width:40%; height: 200px; float:left; text-align:center; padding:30px 10px;" >
+					<figure>
+						 <img src="./images/projects/trecvid1.png" width="100%" height="200px"/>
+						<figcaption>Sliding cuboids during test phase.</figcaption>
+					</figure>
+				</div>
+				<div style="width:45%; height: 200px; float:left; text-align:center; padding:30px 10px;" >
+					<video id="my_video_2" class="video-js vjs-default-skin" controls
+							  preload="auto" width="100%" height="200px"
+							  data-setup="{}">
+							  <source src="./images/projects/celltoear.mp4" type='video/mp4'>
+							</video>
+					A CellToEar event.
+				</div>
+				<div class="clear"></div>
+				
+			</div>
+			<div class="clear"></div>
+		</section>
+		
+		<section>
+			<div class="sectionTitle">
+				<h1>Projects Prior to Ph.D.</h1>
+			</div>
+			<div class="sectionContent">
+				<article>
+					<h2> Bengali License Plate Recognition.</h2>
+					<div class="comment more">
+						Automatic license plate detection and recognition has numerous applications. A large number of schemes have already been proposed in order to make the detection and recognition process efficient. However, a very little work has been done on Bengali license plate recognition. Wide variation among the license plate patterns, complex background, and the difficulty in segmenting Bengali characters of Bangladeshi license plates make it inefficient to use the existing algorithms. In this paper, we propose a solution for Bengali license plate detection and recognition. We use three stages of conventional license plate recognition system. However, we propose new algorithm in each stage, which are effective for Bengali license plate detection and recognition. We tested our algorithms for over 250 images taken from the road. We achieve over 95% success in Bengali license plate recognition.
+					</div>
+				</article>
+				
+				<div style="width:40%; height: 200px; float:left; text-align:center; padding:30px 10px;" >
+					<figure>
+						 <img src="./images/projects/lpr1.png" width="100%" height="200px"/>
+						<figcaption>Bangladeshi license plates.</figcaption>
+					</figure>
+				</div>
+				<div style="width:50%; height: 200px; float:left; text-align:center; padding:30px 10px;" >
+					<figure>
+						 <img src="./images/projects/lpr2.png" width="100%" height="200px"/>
+						<figcaption>Some results.</figcaption>
+					</figure>
+				</div>
+				<div class="clear"></div>
+				
+			</div>
+			<div class="clear"></div>
+		</section>
+		
+		<section>
+			<div class="sectionTitle">
+				<h1></h1>
+			</div>
+			<div class="sectionContent">
+				<article>
+					<h2> Traffic Sign Detection and Recognition.</h2>
+					<div class="comment more">
+						Automatic detection of road sign is a challenging but demanding job. A new approach namely automatic detection and recognition of traffic signs (ADRTS) considering color segmentation, moment invariants, and neural networks has been proposed in this paper. Experimental result proves the superior performance in the detection and recognition of road signs. Computational time complexity is also quite low that makes it applicable for the real time system
+					</div>
+				</article>
+				<div style="width:35%; height: 200px; float:left; text-align:center; padding:30px 10px;" >
+					<figure>
+						 <img src="./images/projects/traffic2.png" width="100%" height="200px"/>
+						<figcaption>Bangladeshi traffic signals.</figcaption>
+					</figure>
+				</div>
+				
+				<div style="width:45%; height: 200px; float:left; text-align:center; padding:30px 10px;" >
+					<figure>
+						 <img src="./images/projects/traffic3.png" width="100%" height="200px"/>
+						<figcaption>Some results.</figcaption>
+					</figure>
+				</div>
+				<div class="clear"></div>
+				
+			</div>
+			<div class="clear"></div>
+		</section>
+		
+		<section>
+			<div class="sectionTitle">
+				<h1></h1>
+			</div>
+			<div class="sectionContent">
+				<article>
+					<h2> Object Segmentation.</h2>
+					<div class="comment more">
+						Segmenting homogeneous regions or objects in an image are very much demanding but challenging. Pattern based object segmentation using split and merge (PSM) was proposed to overcome the problems of basic split and merge(SM) algorithm, which is unable to segment properly all types of objects in an image due to huge variations among the objects in size, shape, intensity and orientation. Though the PSM algorithm has better performance than some other image segmentation algorithms, it is completely unable to segment the connected regions in an image and also has higher rate of shape distortion. Addressing these issues, a new algorithm namely object segmentation using block based patterns(OSP) is proposed in this paper considering multi stage merging technique. Experimental results show that the OSP algorithm is not only capable of segmenting connected regions in an image but also yield quite low shape distortion of the regions.
+					</div>
+				</article>
+				
+				<div style="width:45%; height: 200px; float:left; text-align:center; padding:30px 10px;" >
+					<figure>
+						 <img src="./images/projects/seg1.png" width="100%" height="200px"/>
+						<figcaption>Some segmentation results.</figcaption>
+					</figure>
+				</div>
+				
+				<div style="width:45%; height: 200px; float:left; text-align:center; padding:30px 10px;" >
+					<figure>
+						 <img src="./images/projects/seg2.png" width="100%" height="200px"/>
+						<figcaption>Some segmentation results.</figcaption>
+					</figure>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="clear"></div>
+		</section>
+		
+	</div>
+	
+	<div id="footer">
+		<center>
+			<a href="index.html">Home</a>
+			<a href="index.html#education">Education</a>
+			<a href="index.html#works">Experience</a>
+			<a href="index.html#research">Research</a>
+			<a href="publications.html">Publications</a>
+			<a href="index.html#random">Random</a>
+		</center>
+	</div>
+</div>
+
+<!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=9441210; 
+var sc_invisible=1; 
+var sc_security="6db4f256"; 
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="free hit
+counters" href="http://statcounter.com/"
+target="_blank"><img class="statcounter"
+src="http://c.statcounter.com/9441210/0/6db4f256/1/"
+alt="free hit counters"></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
+
+</body>
+</html>

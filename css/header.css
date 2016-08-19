@@ -1,0 +1,50 @@
+
+#headshot img {
+	width: 16%;
+	height: auto;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+	float: left;
+	margin-right: 20px;
+}
+
+#name {
+	padding-top: 10px;
+	width: 40%;
+	height: auto;
+	float: left;
+}
+
+#name h1 {
+	font-size: 2em;
+	font-weight: 700;
+	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+	margin-top:-12px;
+}
+
+#name h2 {
+	font-size: 1.5em;
+	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+	margin-top: -30px;
+}
+
+#name h3 {
+	font-size: 1.2em;
+	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+	margin-top: -25px;
+}
+
+#contactDetails {
+	float: left;
+	font-weight: 5;
+	font-size: 0.8em;
+	margin-top: 10px;
+	padding-right: 20px
+}
+
+#contactDetails img {
+	width: 35px;
+	height: 35px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+}

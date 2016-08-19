@@ -1,1 +1,294 @@
-"Hello World" 
+<!DOCTYPE html>
+<html>
+<head>
+<title>Mahmudul Hasan</title>
+<link rel="icon" href="images/website_logo.png">
+
+<meta name="viewport" content="width=device-width"/>
+<meta name="description" content="Mahmudul Hasan"/>
+<meta charset="UTF-8"> 
+<link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700|Lato:400,300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="./css/slider.css" type="text/css" media="screen">
+<link rel="stylesheet" href="./css/reset.css" type="text/css" media="screen">
+<link rel="stylesheet" href="./css/skeleton.css" type="text/css" media="screen">
+<link rel="stylesheet" href="./css/superfish.css" type="text/css" media="screen">
+<link rel="stylesheet" href="./css/style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="./css/slider.css" type="text/css" media="screen">
+<link href='http://fonts.googleapis.com/css?family=Maven+Pro:500' rel='stylesheet' type='text/css'>
+<script src="./js/jquery-1.7.1.min.js"></script>
+<script src="./js/script.js"></script>
+<script src="./js/superfish.js"></script>
+<script src="./js/jquery.hoverIntent.js"></script>
+<script src="./js/jquery.responsivemenu.js"></script>
+<script src="./js/slides.min.jquery.js"></script>
+<script src="./js/jquery.easing.1.3.js" type="text/javascript"></script>
+<script>
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+
+<script>
+$(function(){
+	$('#slides').slides({
+		effect: 'fade',
+		fadeSpeed:700,
+		play: 6000,
+		pause: 4000,
+		generatePagination: true,
+		crossfade: true,
+		hoverPause: true,
+		animationStart: function(current){$('.caption').animate({right:-999},300);},
+		animationComplete: function(current){$('.caption').animate({right:0},300);},
+		slidesLoaded: function() {$('.caption').animate({right:0},300);}
+	});
+});
+</script>
+
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+<body id="top">
+
+
+<div id="cv" class="instaFade">
+	<div id="mainDetails">
+		<iframe src="header.html" scrolling=no width=100% height=130px></iframe>
+		<div class="clear"></div>
+	</div>
+	
+	<div id="headLinks">
+		<a href="index.html">Home</a>
+		<a href="index.html#education">Education</a>
+		<a href="index.html#works">Experience</a>
+		<a href="index.html#research">Research</a>
+		<a href="publications.html">Publications</a>
+		<a href="index.html#random">Random</a>
+		<a href="./cv/cv_hasan.pdf">CV</a>
+		<div class="clear"></div>
+	</div>
+	
+	<div class="mainDetails1">
+		<div id="abtMe">
+			<h2>About Me...</h2><hr>
+			<p>I am Mahmudul Hasan. I was born and rasised in <a href="http://en.wikipedia.org/wiki/Dhaka">Dhaka</a>, Bangladesh. I obtained my Bachelors and Masters degree in Computer Science and Engineering from <a href "http://www.buet.ac.bd/"> Bangladesh University of Engineering and Technology</a> (BUET). It is the most prestigious academic institution in Bangladesh. After my graduation, I worked as the Research Lecturer at Computer Sicence department of <a href="http://www.ewubd.edu/"> East West University</a>. Currently, I am a Ph.D. candidate of Computer Science in <a href="http://www.ucr.edu"> University of California, Riverside</a>. I did two summer internships at Metaio Inc. in 2014 and at Comcast Labs in 2015. My main research interests are - 
+					<br>  &nbsp &nbsp1. Computer vision - Human Activity Recognition, Object Recognition, Video Description, and Tracking.
+					<br> &nbsp &nbsp2. Machine learning --Active Learning, Deep Learning, and Reinforcement Learning.</p>
+		</div>
+		<div class="clear"></div>
+	</div>
+
+	<div class="mainDetails1">
+		<div id="slideShow">
+			<h2>Overview...</h2><hr>
+			<div id="slides">
+				<div class="slides_container">
+					<div class="slide">
+						<img src="slider/2015iccv.jpg" alt="">
+						<div class="caption">
+							<div class="indents">
+								<a href="caal.html"> <h2> Context Aware Active Learning </h2> </a>
+								<font color =#00000>Activity recognition in video has recently benefited from the use of the context...<a href="caal.html">read more</font></a>  
+							</div>
+						</div>
+					</div>
+
+					<div class="slide">
+						<img src="slider/2016cvpr.jpg" alt="">
+						<div class="caption">
+							<div class="indents">
+								<a href="regularity.html"> <h2> Learning Temporal Regularity in Videos </h2> </a>
+								<font color =#00000>Perceiving meaningful activities in a long video sequence is a challenging problem due to ambiguous definition..<a href="regularity.html">read more</font></a>  
+							</div>
+						</div>
+					</div>
+
+					<div class="slide">
+						<img src="slider/2014eccv.jpg" alt="">
+						<div class="caption">
+							<div class="indents">
+								<a href="hybrid.html"> <h2> Activity Recognition with Hybrid Feature Models </h2> </a>
+								<font color =#00000>WLearning activity models continuously from streaming videos...<a href="hybrid.html">read more</font></a>  
+							</div>
+						</div>
+					</div>
+
+					<div class="slide">
+						<img src="slider/2014cvpr.jpg" alt="">
+						<div class="caption">
+							<div class="indents">
+								<a href="incremental.html"> <h2> Incremental Human Activity Modeling </h2> </a>
+								<font color =#00000>Most of the state-of-the-art approaches to human activity recognition in video need...<a href="incremental.html">read more</font></a>  
+							</div>
+						</div>
+					</div>
+
+					<div class="slide">
+						<img src="slider/activity.jpg" alt="">
+						<div class="caption">
+							<div class="indents">
+								<a href="projects.html#trecvid"> <h2> Human Activity Recognition </h2> </a>
+								<font color =#00000>We detect seven activities defined by TRECVID SED task such as CellToEar, Embrace, ObjectPut, PeopleMeet...<a href="projects.html#trecvid">read more</font></a>  
+							</div>
+						</div>
+					</div>
+
+					<div class="slide">
+						<img src="slider/aerial.jpg" alt="">
+						<div class="caption">
+							<div class="indents">
+								<a href="projects.html#aerial"> <h2> Aerial Video Tracking </h2> </a>
+								<font color =#00000>The analysis of videos from aerial platforms remains a challenging and important problem. The most fundamental...<a href="projects.html#aerial">read more</font></a>  
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+
+		</div>
+
+		<div id="news">
+			<h2>News & Updates...</h2><hr>
+			<ul list-style-type="square">
+				<li> [Mar 2016] <a href="regularity.html"> A paper titled "Learning Temporal Regularity in Video Sequences" got accepted in CVPR 2016. </a> <img src="images/new.gif"/></li>
+				<li> [Oct 2015] A paper titled " Incremental Learning of Human Activity Models from Videos" got accepted in CVIU</li>
+				<li> [Sep 2015] A paper titled "A Continuous Learning Framework for Activity Recognition Using Deep Hybrid Feature Model" got accepted in TMM </li>
+				<li> [Sep 2015] A paper titled "Context Aware Active Learning of Activity Recognition Models" got accepted in ICCV 2015 </li>
+				<li> [Jun 2015] Started summer internship at Comcast Labs, Washington DC.</li>
+			</ul>
+		</div>
+
+		<div class="clear"></div>
+	</div>
+	
+	<div class="mainDetails1">
+	
+		<div id="research">
+			<h2>Research...</h2><hr>
+			<li><a href="projects.html" "style=text-decoration: none"><h2> Research Projects </h2> </a> Please click <a href="projects.html">here</a> to get a broad overview of my completed and ongoing research projects.
+				<br>1. &nbsp  <a href="regularity.html">Learning Temporal Regularity in Video Sequences</a>
+				<br>2. &nbsp <a href="caal.html">Context Aware Active Learning of Activity Recogntion Models</a>
+				<br>3. &nbsp  <a href="hybrid.html">Continuous Learning of Human Activity Models using Deep Nets</a>
+				<br>4. &nbsp  <a href="incremental.html">Incremental Activity Modeling and Recognition in Streaming Videos</a>
+				</ol>
+			</li>
+			<li><article>
+				<h2> Motivations Behind My Research</h2> It's true that, processing power of a computer increased tremendously over the last few decades. Yet, it's far beyond the capability of a human brain, specially in visual scene understanding. A human brain can easily comprehend its surroundings and is capable of making quick decisions, which very hard and intractable in many cases even for the super fast computer. My research is driven by these facts and the following question: <font color="purple">"How to build a machine with visual capability to the level of a human brain?"</font>
+			</article></li>
+			<li><article>
+				<h2> My Achievements So Far</h2> My research interest lies in human activity recognition in continuous videos and object tracking in aerial videos. So far, I developed algorithms to detect and recognize human activities in surveillence videos, to track humans and vehicles in unstable aerial videos. Currently, I am working on incremental activity modeling in streaming videos.
+			</article></li>
+		</div>
+		
+		<div class="clear"></div>
+	</div>
+	
+	<div class="mainDetails1">
+		<div id="education">
+			<h2>Educations...</h2><hr>
+			<li><article>
+				<h2>Ph.D. Candidate in Computer Science</h2>
+				<h3>University of California, Riverside</h3>
+				<p class="subDetails">September 2011 - Present</p>
+				Supervisor: <a href="http://www.ee.ucr.edu/~amitrc/index.php">Dr. Amit K. Roy-Chowdhury</a><br>
+			</article></li>
+			<li></article>
+				<h2>M.Sc. in Computer Science </h2>
+				<h3>Bangladesh University of Engineering and Technology</h3>
+				<p class="subDetails">September 2009 - August 2011</p>
+				Thesis Title: Automatic Detection and Recognition of Vehicle License Plate in Bangla.<br>
+			</article></li>
+			<li><article>
+				<h2>B.Sc. in Computer Science and Engineering </h2>
+				<h3>Bangladesh University of Engineering and Technology</h3>
+				<p class="subDetails">March 2004 - December 2008</p>
+				Thesis Title: Study of Quantum Computing.
+			</article></li>
+			I successfully completed a number of exciting academic projects during these years. Please click <a href="academicprojects.html">here</a> to get an overview of these projects. Click <a href="mycourses.html">here</a> to see the list of courses I completed.
+		</div>
+		<div class="clear"></div>
+	</div>
+
+	<div class="mainDetails1">
+		<div id="works">
+			<h2>Work Experiences...</h2><hr>
+			<ul>
+			<li><article>
+				<h2>Research Intern, Comcast Labs, Washington, DC.</h2>
+				<p class="subDetails">June 2015 - September 2015</p>
+			</article></li>
+			<li><article>
+				<h2>Research Intern, Metaio Inc., Dallas, Texas.</h2>
+				<p class="subDetails">June 2015 - September 2015</p>
+			</article></li>
+			<li><article>
+				<h2>Teaching Assistant, University of California, Riverside</h2>
+				<p class="subDetails">September 2013 - Present</p>
+			</article></li>
+			<li><article>
+				<h2>Graduate Student Research, University of California, Riverside</h2>
+				<p class="subDetails">June 2012 - Present</p>
+			</li>
+			</article>
+			<li><article>
+				<h2>Research Lecturer, East West University</h2>
+				<p class="subDetails">May 2009 - August 2011</p>
+			</article></li>
+			</ul>
+			Please click <a href="taughtcourses.html">here</a> to see the list of coures I taught.
+		</div>
+		<div class="clear"></div>	
+	</div>
+		
+	<div class="mainDetails1">
+		<div id="random">
+			<h2>Random...</h2><hr>
+			
+			<li><a href="random.html#links"><h2>Important Links</h2></a><br></li>
+			<li><a href="random.html#favs"><h2>My Favorites</h2></a><br></li>
+			<li><a href="random.html#travels"><h2>Travels</h2></a><br></li>
+			<li><a href="random.html#cooking"><h2>Cooking</h2></a><br></li>
+		</div>
+		
+		<div class="clear"></div>
+	</div>
+	
+	
+	<div id="footer">
+		<center>
+			<a href="index.html">Home</a>
+			<a href="index.html#education">Education</a>
+			<a href="index.html#works">Experience</a>
+			<a href="index.html#research">Research</a>
+			<a href="publications.html">Publications</a>
+			<a href="index.html#random">Random</a>
+		</center>
+	</div>
+</div>
+
+<!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=9441210; 
+var sc_invisible=1; 
+var sc_security="6db4f256"; 
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="free hit
+counters" href="http://statcounter.com/"
+target="_blank"><img class="statcounter"
+src="http://c.statcounter.com/9441210/0/6db4f256/1/"
+alt="free hit counters"></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
+
+</body>
+</html>
