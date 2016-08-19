@@ -1,0 +1,60 @@
+nav{float:right; padding-top:10px;}
+.menu {list-style:none;}
+.menu > li {
+	position:relative;
+	float:left;
+	font:500 19px/23px 'Maven Pro', sans-serif;
+	margin-right:27px;
+}
+	.menu > li > a {color:#333;}
+		.menu > li.sfHover > a,.menu > li > a:hover , .menu > li.current > a {text-decoration:none; color:#4b8cb9;}
+	.menu .menu-arrow{display:none;}
+/***submenu***/
+.menu ul {
+	position:absolute;
+	top:-999em;
+	width:184px; 
+	display:none;
+	background:#fff;
+	z-index:99;
+}
+.menu li li{
+	width:100%;
+	padding:0;
+	margin-bottom:1px;
+	position:relative;
+	font:12px/15px Arial, Helvetica, sans-serif;
+}
+	.menu li li a{
+		display:block;
+		padding:5px 10px;
+		color:#333;
+		background:#cdd5d9;
+	}
+		.menu li li > a:hover,.menu li li.sfHover > a{color:#fff; text-decoration:none; background-color:#4b8cb9;}
+.menu li:hover ul, .menu li.sfHover ul {left:0px; top:38px;}
+.menu li:hover li ul, .menu li.sfHover li ul {top:-999em;}
+/***subsubmenu***/
+.menu li li:hover ul, .menu li li.sfHover ul {left:185px; top:0px;}
+.menu li li:hover li ul, .menu li li.sfHover li ul {top:-999em;}
+
+/* Design for a width of 768px */
+@media only screen and (max-width: 995px){
+	.menu > li {margin-right:10px;}
+	.menu .menu-arrow{display:inline-block; width:4px; height:8px; overflow:hidden; text-indent:-999em; background:url(../images/menu-arrow.gif) center top no-repeat; margin-left:4px; vertical-align:1px;}
+		.menu li.sfHover > a .menu-arrow,.menu li > a:hover .menu-arrow, .menu li.current > a .menu-arrow{background-position: center -17px;}
+	.menu ul .menu-arrow{background-image:url(../images/submenu-arrow.gif); vertical-align:0px;}
+}
+
+/* Design for a width of 320 and 480px*/
+@media only screen and (max-width: 767px) {
+	nav{width:100%; padding-bottom:15px;}
+	.menu > li {float:none; margin-right:0px; margin-bottom:5px;}
+	.menu > li > a {display:block; background:#fcfcfc; border:1px solid #f2f2f2; padding:4px 10px 7px; border-radius:4px; -moz-border-radius:4px; -webkit-border-radius:4px;}
+	/***submenu***/
+	.menu ul {position:static; width:auto; padding:3px 0; background:none;}
+	/***subsubmenu***/
+	.menu ul ul{padding:1px 0 0;}
+	.menu ul ul li{text-transform:lowercase;}
+	.menu ul ul li a{padding-left:30px;}
+}
