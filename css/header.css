@@ -10,7 +10,7 @@
 
 #name {
 	padding-top: 10px;
-	width: 40%;
+	width: 46%;
 	height: auto;
 	float: left;
 }
@@ -34,12 +34,17 @@
 	margin-top: -25px;
 }
 
+#name h5 {
+	font-size: 1em;
+	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+	margin-top: -25px;
+}
+
 #contactDetails {
 	float: left;
+	width: 25%;
 	font-weight: 5;
 	font-size: 0.8em;
-	margin-top: 10px;
-	padding-right: 20px
 }
 
 #contactDetails img {
@@ -47,4 +52,9 @@
 	height: 35px;
 	-webkit-border-radius: 50px;
 	border-radius: 50px;
+}
+
+#headerLogo {
+	float: left;
+	width: 10%;
 }
